@@ -1,17 +1,22 @@
 package ledger.domain
 
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
+import java.time.YearMonth
 
-case class Month(year: Int, month: Int)
+final case class Month(
+  yearMonth: YearMonth,
+  transactions: List[Transaction]
+) {
 
-object Month {
-  def from(year: Int, month: Int): Month =
-    Month(year, month)
-}
+  /** Total amount for the month (income + expenses) */
+  def total: BigDecimal =
+    ???  
 
-object MonthDay {
-  private val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+  /** Transactions grouped by category */
+  def byCategory: Map[Category, List[Transaction]] =
+    ???
 
-  def parse(s: String): LocalDate = LocalDate.parse(s, formatter)
+  /** Total amount per category for the month */
+  def totalsByCategory: Map[Category, BigDecimal] =
+    ???
+
 }

@@ -1,4 +1,17 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@3bf4d4a5, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@67455c23, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.MonthSpec, org.scalatest.tools.Framework$$anon$1@67455c23, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct total for a single transaction in a single month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sum multiple transactions within the same month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions into separate months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should net income and expenses correctly within a month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a negative total when a month contains only expenses[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should assign transactions on month boundaries to the correct month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce the same results regardless of transaction order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return no monthly totals for an empty ledger[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParserSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParser[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -15,10 +28,11 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Too many columns returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid date format returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid amount format returns an error[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 308 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 14[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 14, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 289 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 24[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 24, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.CsvParserSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.MonthSpec[0m

@@ -1,1 +1,1 @@
-["ledger.parsing.CsvParserSpec"]
+["ledger.parsing.CsvParserSpec","ledger.parsing.MonthSpec"]

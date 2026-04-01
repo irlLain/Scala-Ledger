@@ -1,3 +1,4 @@
 #Successful Tests
-#Wed Apr 01 12:43:55 BST 2026
-ledger.parsing.CsvParserSpec=1775043835815
+#Wed Apr 01 16:59:47 BST 2026
+ledger.parsing.CsvParserSpec=1775059187860
+ledger.parsing.MonthSpec=1775059187694

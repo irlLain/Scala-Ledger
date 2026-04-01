@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala:42:25: not found: value parseDate[0m
-[0m[[0m[31merror[0m] [0m[0m                date <- parseDate(dateStr)[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala:43:27: not found: value parseAmount[0m
-[0m[[0m[31merror[0m] [0m[0m                amount <- parseAmount(amountStr)[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala:29:11: not found: value MonthDay[0m
+[0m[[0m[31merror[0m] [0m[0m          MonthDay.parse(dateStr)[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
