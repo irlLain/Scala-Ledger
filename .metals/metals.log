@@ -1,0 +1,46 @@
+2026.04.01 10:27:09 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.04.01 10:27:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:27:11 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/build.sbt
+Apr 01, 2026 10:28:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 01, 2026 10:28:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 01, 2026 10:28:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 01, 2026 10:28:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.04.01 10:29:40 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\transaction.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:29:40 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/domain/transaction.scala
+2026.04.01 10:29:46 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\money.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:29:46 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/domain/money.scala
+2026.04.01 10:29:53 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\category.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:29:53 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/domain/category.scala
+2026.04.01 10:30:01 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\month.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:30:01 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/domain/month.scala
+2026.04.01 10:30:48 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:30:48 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/parsing/CsvParser.scala
+2026.04.01 10:31:06 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\ledger\ledger.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:31:06 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/ledger/ledger.scala
+2026.04.01 10:31:22 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\cli\Main.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:31:22 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/main/scala/ledger/cli/Main.scala
+2026.04.01 10:32:09 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\parsing\CsvParserSpec.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:32:09 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/parsing/CsvParserSpec.scala
+2026.04.01 10:32:36 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\ledger\LedgerSpec.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:32:36 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/ledger/LedgerSpec.scala
+2026.04.01 10:32:51 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MoneySpec.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:32:51 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/domain/MoneySpec.scala
+2026.04.01 10:33:03 WARN  no build target for: C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt
+2026.04.01 10:33:03 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:03 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/build.sbt
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:10 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/build.sbt
+2026.04.01 10:33:12 WARN  no build target for: C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt
+2026.04.01 10:33:12 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:12 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/build.sbt
+2026.04.01 10:33:12 INFO  no build target found for C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\build.sbt. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.01 10:33:12 WARN  Could not find semantic tokens for: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/build.sbt
