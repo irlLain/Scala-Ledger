@@ -16,14 +16,14 @@ class CsvParserSpec extends AnyWordSpec with Matchers {
 //Path contact
 
  "parse a valid CSV row into a Transaction" in {
-      val row = "2026-03-01,Food,-10.50"
+      val row = "2026-03-01,Food,10.50"
 
       val result = CsvParser.parse(row)
 
       result shouldBe Right(
         Transaction(
           date     = MonthDay.parse("2026-03-01"),
-          category = Category("Income"),
+          category = Category("Food"),
           amount   = Money(BigDecimal("10.50"))
         )
       )

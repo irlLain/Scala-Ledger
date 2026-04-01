@@ -1,65 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 21 products, 7 sources, 1 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 22 products, 7 sources, 1 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/ledger/domain/transaction.scala, ${BASE}/src/main/scala/ledger/domain/month.scala, ${BASE}/src/main/scala/ledger/cli/Main.scala, ${BASE}/src/main/scala/ledger/parsing/CsvParser.scala, ${BASE}/src/main/scala/ledger/domain/money.scala, ${BASE}/src/main/scala/ledger/domain/category.scala, ${BASE}/src/main/scala/ledger/ledger/ledger.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/ledger/parsing/CsvParser.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/ledger/parsing/CsvParser.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.CsvParser, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.CsvParser, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/ledger/parsing/CsvParser.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.CsvParser, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.14\scala2-sbt-bridge-2.13.14.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 120b6f82 for Scala compiler version 2.13.14[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes;C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.6207487 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.parsing.ParseError.UnexplainedError...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError.UnexplainedError[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.parsing.ParseError.UnexplainedError)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.parsing.ParseError.UnexplainedError,ModifiedNames(changes = UsedName(productArity,[Default]), UsedName(isInstanceOf,[Default]), UsedName(canEqual,[Default]), UsedName(##,[Default]), UsedName(clone,[Default]), UsedName(UnexplainedError,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($init$,[Default]), UsedName(productIterator,[Default]), UsedName(productElementName,[Default]), UsedName(equals,[Default]), UsedName(notify,[Default]), UsedName(finalize,[Default]), UsedName(ne,[Default]), UsedName(productPrefix,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(productElement,[Default]), UsedName(eq,[Default]), UsedName(getClass,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(productElementNames,[Default]))) invalidates 1 classes due to The ledger.parsing.ParseError.UnexplainedError has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(productArity,[Default]), UsedName(isInstanceOf,[Default]), UsedName(canEqual,[Default]), UsedName(##,[Default]), UsedName(clone,[Default]), UsedName(UnexplainedError,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($init$,[Default]), UsedName(productIterator,[Default]), UsedName(productElementName,[Default]), UsedName(equals,[Default]), UsedName(notify,[Default]), UsedName(finalize,[Default]), UsedName(ne,[Default]), UsedName(productPrefix,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(productElement,[Default]), UsedName(eq,[Default]), UsedName(getClass,[Default]), UsedName(==,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]), UsedName(productElementNames,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.parsing.ParseError.UnexplainedError)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.parsing.ParseError...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.ParseError.InvalidDate by ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.ParseError.InvalidAmount by ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.ParseError.UnexplainedError by ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.ParseError.InvalidFormat by ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError, ledger.parsing.ParseError.UnexplainedError)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.parsing.ParseError,ModifiedNames(changes = UsedName(UnexplainedError,[Default]), UsedName(ParseError,[Default]))) invalidates 5 classes due to The ledger.parsing.ParseError has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(UnexplainedError,[Default]), UsedName(ParseError,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError, ledger.parsing.ParseError.UnexplainedError)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.ParseError.InvalidAmount[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.ParseError.InvalidFormat[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.ParseError.InvalidDate[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.ParseError.InvalidDate[0m
-[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set(ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.ParseError.InvalidDate)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.CsvParser, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError, ledger.parsing.ParseError.UnexplainedError[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated macros due to upstream dependencies change: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
