@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala:12:44: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : ledger.parsing.ParseError.type[0m
+[0m[[0m[31merror[0m] [0m[0m required: ledger.parsing.ParseError[0m
+[0m[[0m[31merror[0m] [0m[0m  def apply(message: String): ParseError = ParseError[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,11 +1,38 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@164bf5a5, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@7f093a20, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParserSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParser[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 229 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should parse a valid CSV row into a Transaction *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Right(Transaction(2026-03-01, Category("Income"), Money(10.50))) (CsvParserSpec.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Parse an income transaction correctly *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Right(Transaction(2026-03-01, Category("Salary"), Money(2000.00))) (CsvParserSpec.scala:38)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Parse an expense transaction correctly *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Right(Transaction(2026-03-01, Category("Rent"), Money(-1200.00))) (CsvParserSpec.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Parse date fields correctly *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected successful parse, got error: UnexplainedError (CsvParserSpec.scala:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Parse category fields correctly *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected successful parse, got error: UnexplainedError (CsvParserSpec.scala:87)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Parse amount into money correctly *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected successful parse, got error: UnexplainedError (CsvParserSpec.scala:101)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Negative amounts should be parsed as expenses *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected successful parse, got error: UnexplainedError (CsvParserSpec.scala:115)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Positive amounts should be parsed as income *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Expected successful parse, got error: UnexplainedError (CsvParserSpec.scala:129)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Invalid CSV format returns an error *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Left(InvalidFormat) (CsvParserSpec.scala:139)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Too few columns returns an error *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Left(InvalidFormat) (CsvParserSpec.scala:147)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Too many columns returns an error *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Left(InvalidFormat) (CsvParserSpec.scala:155)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Invalid date format returns an error *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Left(InvalidDate) (CsvParserSpec.scala:163)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Invalid amount format returns an error *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left(UnexplainedError) was not equal to Left(InvalidAmount) (CsvParserSpec.scala:171)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 350 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 14[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.CsvParserSpec[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 13, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 13 TESTS FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	ledger.parsing.CsvParserSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
