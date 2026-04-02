@@ -1,5 +1,6 @@
 package ledger.parsing
 
+import java.time.LocalDate
 import ledger.domain._
 
 sealed trait ParseError
@@ -26,7 +27,7 @@ object CsvParser {
     fields match {
       case Array(dateStr, categoryStr, amountStr) =>
         val date = try {
-          MonthDay.parse(dateStr)
+          LocalDate.parse(dateStr)
         } catch {
           case _: Exception => return Left(ParseError.InvalidDate)
         }

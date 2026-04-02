@@ -1,11 +1,14 @@
 package ledger.ledger
 
-import ledger.domain.Transaction
+import ledger.domain.{Month, Transaction}
 
 class Ledger(transactions: List[Transaction]) {
 
   def all: List[Transaction] =
     transactions
+
+  def months: List[Month] =
+    ???
 }
 
 object Ledger {

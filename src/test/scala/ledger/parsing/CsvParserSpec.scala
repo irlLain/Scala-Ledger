@@ -4,6 +4,7 @@ import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 import ledger.domain._
 import scala.math.BigDecimal
+import java.time.LocalDate
 
 class CsvParserSpec extends AnyWordSpec with Matchers {
 
@@ -22,7 +23,7 @@ class CsvParserSpec extends AnyWordSpec with Matchers {
 
       result shouldBe Right(
         Transaction(
-          date     = MonthDay.parse("2026-03-01"),
+          date     = LocalDate.parse("2026-03-01"),
           category = Category("Food"),
           amount   = Money(BigDecimal("10.50"))
         )
@@ -37,7 +38,7 @@ class CsvParserSpec extends AnyWordSpec with Matchers {
 
       result shouldBe Right(
         Transaction(
-          date     = MonthDay.parse("2026-03-01"),
+          date     = LocalDate.parse("2026-03-01"),
           category = Category("Salary"),
           amount   = Money(BigDecimal("2000.00"))
         )
@@ -52,7 +53,7 @@ class CsvParserSpec extends AnyWordSpec with Matchers {
     
         result shouldBe Right(
             Transaction(
-            date     = MonthDay.parse("2026-03-01"),
+            date     = LocalDate.parse("2026-03-01"),
             category = Category("Rent"),
             amount   = Money(BigDecimal("-1200.00"))
             )
@@ -67,7 +68,7 @@ class CsvParserSpec extends AnyWordSpec with Matchers {
 
   result match {
     case Right(transaction) =>
-      transaction.date shouldBe MonthDay.parse("2026-03-15")
+      transaction.date shouldBe LocalDate.parse("2026-03-15")
 
     case Left(error) =>
       fail(s"Expected successful parse, got error: $error")

@@ -1,71 +1,48 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 22 products, 7 sources, 1 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 20 products, 7 sources, 1 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/ledger/domain/transaction.scala, ${BASE}/src/main/scala/ledger/domain/month.scala, ${BASE}/src/main/scala/ledger/cli/Main.scala, ${BASE}/src/main/scala/ledger/parsing/CsvParser.scala, ${BASE}/src/main/scala/ledger/domain/money.scala, ${BASE}/src/main/scala/ledger/domain/category.scala, ${BASE}/src/main/scala/ledger/ledger/ledger.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/ledger/domain/month.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/ledger/ledger/ledger.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/ledger/domain/month.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/ledger/ledger/ledger.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(ledger.domain.MonthDay, ledger.domain.Month)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(ledger.ledger.Ledger)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(ledger.domain.MonthDay, ledger.domain.Month)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/ledger/domain/month.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.domain.MonthDay, ledger.domain.Month[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(ledger.ledger.Ledger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/ledger/ledger/ledger.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.ledger.Ledger[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.14\scala2-sbt-bridge-2.13.14.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 3253e41 for Scala compiler version 2.13.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 29e40da5 for Scala compiler version 2.13.14[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes;C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 9.2065759 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.4451517 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.domain.MonthDay...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.domain.MonthDay[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.domain.MonthDay)[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of ledger.parsing.CsvParser: [UsedName(MonthDay,[Default]), UsedName(parse,[Default]), UsedName(!=,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.domain.MonthDay,ModifiedNames(changes = UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(equals,[Default]), UsedName(ne,[Default]), UsedName(notify,[Default]), UsedName(finalize,[Default]), UsedName(hashCode,[Default]), UsedName(MonthDay,[Default]), UsedName(isInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(parse,[Default]), UsedName(synchronized,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]))) invalidates 2 classes due to The ledger.domain.MonthDay has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(==,[Default]), UsedName(clone,[Default]), UsedName(##,[Default]), UsedName(notifyAll,[Default]), UsedName(equals,[Default]), UsedName(ne,[Default]), UsedName(notify,[Default]), UsedName(finalize,[Default]), UsedName(hashCode,[Default]), UsedName(MonthDay,[Default]), UsedName(isInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(parse,[Default]), UsedName(synchronized,[Default]), UsedName(!=,[Default]), UsedName(wait,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.domain.MonthDay)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(ledger.parsing.CsvParser)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.domain.Month...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.domain.Month[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.domain.Month)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.domain.Month,ModifiedNames(changes = UsedName(month,[Default]), UsedName(curried,[Default]), UsedName(Month,[Default]), UsedName(unapply,[Default]), UsedName(from,[Default]), UsedName(copy,[Default]), UsedName(ledger;domain;Month;init;,[Default]), UsedName(tupled,[Default]), UsedName(apply,[Default]), UsedName(byCategory,[Default]), UsedName(transactions,[Default]), UsedName(copy$default$1,[Default]), UsedName(totalsByCategory,[Default]), UsedName(copy$default$2,[Default]), UsedName(year,[Default]), UsedName(toString,[Default]), UsedName(total,[Default]), UsedName(yearMonth,[Default]), UsedName($init$,[Default]))) invalidates 1 classes due to The ledger.domain.Month has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(month,[Default]), UsedName(curried,[Default]), UsedName(Month,[Default]), UsedName(unapply,[Default]), UsedName(from,[Default]), UsedName(copy,[Default]), UsedName(ledger;domain;Month;init;,[Default]), UsedName(tupled,[Default]), UsedName(apply,[Default]), UsedName(byCategory,[Default]), UsedName(transactions,[Default]), UsedName(copy$default$1,[Default]), UsedName(totalsByCategory,[Default]), UsedName(copy$default$2,[Default]), UsedName(year,[Default]), UsedName(toString,[Default]), UsedName(total,[Default]), UsedName(yearMonth,[Default]), UsedName($init$,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.domain.Month)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.ledger.Ledger...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.ledger.Ledger[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.ledger.Ledger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.ledger.Ledger,ModifiedNames(changes = UsedName(months,[Default]))) invalidates 1 classes due to The ledger.ledger.Ledger has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(months,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.ledger.Ledger)[0m
 [0m[[0m[0mdebug[0m] [0m[0m  > [0m
 [0m[[0m[0mdebug[0m] [0m[0m  > [0m
 [0m[[0m[0mdebug[0m] [0m[0m  > [0m
 [0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.CsvParser[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.CsvParser[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set(ledger.parsing.CsvParser)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.domain.MonthDay, ledger.domain.Month[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.CsvParser by ledger.domain.MonthDay[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.ledger.Ledger[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated macros due to upstream dependencies change: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.parsing.ParseError.InvalidAmount, ledger.parsing.ParseError.InvalidFormat, ledger.parsing.CsvParser, ledger.parsing.ParseError.InvalidDate, ledger.parsing.ParseError, ledger.parsing.ParseError.UnexplainedError[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding ledger.parsing.ParseError.UnexplainedError by ledger.parsing.ParseError[0m
-[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 2[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.14\scala2-sbt-bridge-2.13.14.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 11bce085 for Scala compiler version 2.13.14[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes;C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

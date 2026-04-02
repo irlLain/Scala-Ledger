@@ -1,4 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\parsing\CsvParserSpec.scala:19:30: value parse is not a member of object ledger.parsing.CsvParser[0m
-[0m[[0m[31merror[0m] [0m[0m      val result = CsvParser.parse(row)[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:77:28: value months is not a member of ledger.ledger.Ledger[0m
+[0m[[0m[31merror[0m] [0m[0m       val months = ledger.months[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:147:28: value months is not a member of ledger.ledger.Ledger[0m
+[0m[[0m[31merror[0m] [0m[0m       val months = ledger.months[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:175:17: value months is not a member of ledger.ledger.Ledger[0m
+[0m[[0m[31merror[0m] [0m[0m        ledgerA.months shouldBe ledgerB.months[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:175:41: value months is not a member of ledger.ledger.Ledger[0m
+[0m[[0m[31merror[0m] [0m[0m        ledgerA.months shouldBe ledgerB.months[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:181:29: value months is not a member of ledger.ledger.Ledger[0m
+[0m[[0m[31merror[0m] [0m[0m        val months = ledger.months[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
