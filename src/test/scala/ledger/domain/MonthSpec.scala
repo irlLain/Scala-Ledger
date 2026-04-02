@@ -53,7 +53,7 @@ class MonthSpec extends AnyWordSpec with Matchers {
             transactions = List(transaction, transaction2)
         )
 
-        month.total shouldBe Money(BigDecimal(2500))
+        month.total shouldBe BigDecimal(2500)
     }
 
     "group transactions into separate months" in {
@@ -79,10 +79,10 @@ class MonthSpec extends AnyWordSpec with Matchers {
        months should have size 2
 
        months.find(_.yearMonth == YearMonth.of(2026, 3)).get.total shouldBe
-            Money(BigDecimal(1000))
+            (BigDecimal(1000))
 
        months.find(_.yearMonth == YearMonth.of(2026, 4)).get.total shouldBe
-            Money(BigDecimal(1500))
+            (BigDecimal(1500))
     }
 
     "net income and expenses correctly within a month" in {
@@ -106,7 +106,7 @@ class MonthSpec extends AnyWordSpec with Matchers {
             transactions = List(transaction, transaction2)
         )
 
-        month.total shouldBe Money(BigDecimal(500))
+        month.total shouldBe (BigDecimal(500))
     }
 
     "return a negative total when a month contains only expenses" in {
@@ -123,7 +123,7 @@ class MonthSpec extends AnyWordSpec with Matchers {
             transactions = List(transaction)
         )
 
-        month.total shouldBe Money(BigDecimal(-500))
+        month.total shouldBe (BigDecimal(-500))
     }
 
     "exclude months that have no transactions" in {
@@ -149,9 +149,9 @@ class MonthSpec extends AnyWordSpec with Matchers {
        months should have size 1
 
        months.find(_.yearMonth == YearMonth.of(2026, 3)).get.total shouldBe
-            Money(BigDecimal(2500))
+            (BigDecimal(2500))
 
-       months.find(_.yearMonth == YearMonth.of(2026, 4)).get.total shouldBe false
+       months.find(_.yearMonth == YearMonth.of(2026, 4)) shouldBe empty
     }
 
     "produce the same results regardless of transaction order" in {

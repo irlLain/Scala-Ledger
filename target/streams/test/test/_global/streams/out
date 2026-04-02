@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@60cc6223, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@60cc6223, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@2e16f390, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@2e16f390, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParserSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParser[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -19,117 +19,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should return the correct total for a single transaction in a single month *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.Month.total(month.scala:12)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$3(MonthSpec.scala:32)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should sum multiple transactions within the same month *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.Month.total(month.scala:12)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$4(MonthSpec.scala:56)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should group transactions into separate months *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.ledger.Ledger.months(ledger.scala:11)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$5(MonthSpec.scala:77)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should net income and expenses correctly within a month *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.Month.total(month.scala:12)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$8(MonthSpec.scala:109)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should return a negative total when a month contains only expenses *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.Month.total(month.scala:12)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$9(MonthSpec.scala:126)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should exclude months that have no transactions *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.ledger.Ledger.months(ledger.scala:11)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$10(MonthSpec.scala:147)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should produce the same results regardless of transaction order *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.ledger.Ledger.months(ledger.scala:11)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$13(MonthSpec.scala:175)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should return no monthly totals for an empty ledger *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:344)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.ledger.Ledger.months(ledger.scala:11)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at ledger.domain.MonthSpec.$anonfun$new$14(MonthSpec.scala:181)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 295 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct total for a single transaction in a single month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sum multiple transactions within the same month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions into separate months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should net income and expenses correctly within a month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a negative total when a month contains only expenses[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce the same results regardless of transaction order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return no monthly totals for an empty ledger[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 279 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 23[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 15, failed 8, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 8 TESTS FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 23, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.CsvParserSpec[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	ledger.domain.MonthSpec[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger.domain.MonthSpec[0m

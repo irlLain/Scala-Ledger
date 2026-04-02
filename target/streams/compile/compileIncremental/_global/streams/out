@@ -22,22 +22,12 @@
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.14\scala2-sbt-bridge-2.13.14.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 29e40da5 for Scala compiler version 2.13.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 2518977c for Scala compiler version 2.13.14[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes;C:\Users\morgan.graves\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.4451517 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.8187106 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ledger.ledger.Ledger...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ledger.ledger.Ledger[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ledger.ledger.Ledger)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ledger.ledger.Ledger,ModifiedNames(changes = UsedName(months,[Default]))) invalidates 1 classes due to The ledger.ledger.Ledger has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(months,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ledger.ledger.Ledger)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m

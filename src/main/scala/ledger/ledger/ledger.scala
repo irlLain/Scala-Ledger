@@ -1,5 +1,6 @@
 package ledger.ledger
 
+import java.time.YearMonth
 import ledger.domain.{Month, Transaction}
 
 class Ledger(transactions: List[Transaction]) {
@@ -8,7 +9,16 @@ class Ledger(transactions: List[Transaction]) {
     transactions
 
   def months: List[Month] =
-    ???
+    transactions
+      .groupBy(t => YearMonth.from(t.date))
+      .map { case (yearMonth, txs) =>
+        Month(
+          yearMonth,
+          txs.sortBy(t => (t.date, t.category.value, t.amount.value))
+        )
+      }
+      .toList
+      .sortBy(_.yearMonth)
 }
 
 object Ledger {

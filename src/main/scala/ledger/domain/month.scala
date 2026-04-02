@@ -7,16 +7,7 @@ final case class Month(
   transactions: List[Transaction]
 ) {
 
-  /** Total amount for the month (income + expenses) */
   def total: BigDecimal =
-    ???  
-
-  /** Transactions grouped by category */
-  def byCategory: Map[Category, List[Transaction]] =
-    ???
-
-  /** Total amount per category for the month */
-  def totalsByCategory: Map[Category, BigDecimal] =
-    ???
+    transactions.map(_.amount.value).sum  
 
 }
