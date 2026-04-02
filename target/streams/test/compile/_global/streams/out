@@ -1,11 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:93:33: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : scala.math.BigDecimal[0m
-[0m[[0m[31merror[0m] [0m[0m required: ledger.domain.Money[0m
-[0m[[0m[31merror[0m] [0m[0m            amount = (BigDecimal(1000))[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\domain\MonthSpec.scala:100:33: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : scala.math.BigDecimal[0m
-[0m[[0m[31merror[0m] [0m[0m required: ledger.domain.Money[0m
-[0m[[0m[31merror[0m] [0m[0m            amount = (BigDecimal(-500))[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\test\scala\ledger\ledger\LedgerSpec.scala:175:1: Missing closing brace `}` assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
