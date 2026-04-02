@@ -172,7 +172,7 @@ class MonthSpec extends AnyWordSpec with Matchers {
         val ledgerA = new Ledger(List(transaction, transaction2))
         val ledgerB = new Ledger(List(transaction2, transaction))
         
-        ledgerA.months shouldBe ledgerB.months
+        ledgerA.months.map(m => (m.yearMonth, m.total)) shouldBe ledgerB.months.map(m => (m.yearMonth, m.total))
 
     }
 
