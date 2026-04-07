@@ -1,7 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@3169da0a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@3169da0a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@3169da0a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@3169da0a, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -54,7 +54,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Create separate category groups for income and expenses with the same name[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Income categories should be ordered alphabetically[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Expense categories should be ordered alphabetically[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 314 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 370 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 44[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 44, failed 0, canceled 0, ignored 0, pending 0[0m[0m
