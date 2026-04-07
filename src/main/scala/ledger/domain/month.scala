@@ -8,6 +8,6 @@ final case class Month(
 ) {
 
   def total: BigDecimal =
-    transactions.map(_.amount.value).sum  
+    transactions.map(_.amount.value).fold(BigDecimal(0))(_ + _)  
 
 }

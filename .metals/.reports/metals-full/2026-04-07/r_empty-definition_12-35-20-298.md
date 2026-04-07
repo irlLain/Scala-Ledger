@@ -1,3 +1,18 @@
+error id: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/domain/CategorySpec.scala:Matchers#
+file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/domain/CategorySpec.scala
+empty definition using pc, found symbol in pc: 
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+	 -org/scalatest/matchers/should/Matchers#
+	 -ledger/domain/Matchers#
+	 -ledger/ledger/Matchers#
+	 -Matchers#
+	 -scala/Predef.Matchers#
+offset: 418
+uri: file:///C:/Users/morgan.graves/Documents/Scala%20Project%201%20-%20Ledger/src/test/scala/ledger/domain/CategorySpec.scala
+text:
+```scala
 package ledger.domain
 
 import org.scalatest.wordspec.AnyWordSpec
@@ -6,8 +21,12 @@ import ledger.domain._
 import ledger.ledger._
 import scala.math.BigDecimal
 import java.time.{LocalDate, YearMonth}
+import java.util.Locale.Category
+import java.util.Locale.Category
+import java.util.Locale.Category
+import java.util.Locale.Category
 
-class CategorySpec extends AnyWordSpec with Matchers {
+class CategorySpec extends AnyWordSpec with Ma@@tchers {
 
   "Category" should {
 
@@ -61,9 +80,9 @@ class CategorySpec extends AnyWordSpec with Matchers {
         Transaction(LocalDate.of(2024, 1, 25), Category("Rent"), Money(BigDecimal(-1000)))
       )
 
-      val categories = transactions.groupBy(_.category.value).map {
+      val categories = transactions.groupBy(_.description).map {
         case (desc, txns) =>
-          val totalAmount = txns.map(_.amount.value).fold(BigDecimal(0))(_ + _)
+          val totalAmount = txns.map(_.amount).sum
           Category(desc, totalAmount)
       }.toList
 
@@ -81,10 +100,10 @@ class CategorySpec extends AnyWordSpec with Matchers {
         Transaction(LocalDate.of(2024, 1, 25), Category("Rent"), Money(BigDecimal(-1000)))
       )
 
-      val categories = transactions.groupBy(_.category.value).map {
-        case (value, txns) =>
-          val totalAmount = txns.map(_.amount.value).fold(BigDecimal(0))(_ + _)
-          Category(value, totalAmount)
+      val categories = transactions.groupBy(_.description).map {
+        case (desc, txns) =>
+          val totalAmount = txns.map(_.amount).sum
+          Category(desc, totalAmount)
       }.toList
 
       categories should contain theSameElementsAs List(
@@ -101,9 +120,9 @@ class CategorySpec extends AnyWordSpec with Matchers {
         Transaction(LocalDate.of(2024, 1, 25), Category("Rent"), Money(BigDecimal(-1000)))
       )
 
-      val categories = transactions.groupBy(_.category.value).map {
+      val categories = transactions.groupBy(_.description).map {
         case (desc, txns) =>
-          val totalAmount = txns.map(_.amount.value).fold(BigDecimal(0))(_ + _)
+          val totalAmount = txns.map(_.amount).sum
           Category(desc, totalAmount)
       }.toList
 
@@ -121,10 +140,10 @@ class CategorySpec extends AnyWordSpec with Matchers {
         Transaction(LocalDate.of(2024, 1, 15), Category("Salary"), Money(BigDecimal(-500)))
       )
 
-      val categories = transactions.groupBy(_.category.value).map {
-        case (value, txns) =>
-          val totalAmount = txns.map(_.amount.value).fold(BigDecimal(0))(_ + _)
-          Category(value, totalAmount)
+      val categories = transactions.groupBy(_.description).map {
+        case (desc, txns) =>
+          val totalAmount = txns.map(_.amount).sum
+          Category(desc, totalAmount)
       }.toList
 
       categories should contain theSameElementsAs List(
@@ -167,3 +186,9 @@ class CategorySpec extends AnyWordSpec with Matchers {
 
   }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: 

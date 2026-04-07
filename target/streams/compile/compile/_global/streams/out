@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\parsing\CsvParser.scala:43:27: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : java.time.MonthDay[0m
-[0m[[0m[31merror[0m] [0m[0m required: java.time.LocalDate[0m
-[0m[[0m[31merror[0m] [0m[0m        Right(Transaction(date, category, Money(amount)))[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\month.scala:11:31: value value is not a member of BigDecimal[0m
+[0m[[0m[31merror[0m] [0m[0m    transactions.map(_.amount.value).fold(BigDecimal(0))(_ + _)  [0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
