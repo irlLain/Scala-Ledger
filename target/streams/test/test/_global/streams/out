@@ -1,7 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@cf5eec6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@cf5eec6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@cf5eec6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@cf5eec6, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@659394eb, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -13,17 +13,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should produce the same results regardless of transaction order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return no monthly totals for an empty ledger[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mLedgerSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mLedger[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list of months when created with no transactions[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions by year and month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a single Month when all transactions occur in the same month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return multiple Months when transactions span multiple months[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should preserve all transactions when grouping into months[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return months ordered by year and month ascending[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce deterministic results regardless of transaction order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParserSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParser[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -40,12 +29,22 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Too many columns returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid date format returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid amount format returns an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLedgerSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLedger[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list of months when created with no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions by year and month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a single Month when all transactions occur in the same month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return multiple Months when transactions span multiple months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should preserve all transactions when grouping into months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return months ordered by year and month ascending[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce deterministic results regardless of transaction order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCategorySpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCategory[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Positive amounts should be flagged as income[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should Zero amounts should be flagged as income *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  false was not equal to true (CategorySpec.scala:30)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Zero amounts should be flagged as income[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Negative amounts should be flagged as expense[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Income flag should be false for negative amounts[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Expense flag should be false for positive amounts[0m[0m
@@ -55,15 +54,13 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Create separate category groups for income and expenses with the same name[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Income categories should be ordered alphabetically[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Expense categories should be ordered alphabetically[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 510 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 314 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 44[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 43, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 44, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ledger.domain.LedgerSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ledger.domain.MonthSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ledger.parsing.CsvParserSpec[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	ledger.domain.CategorySpec[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger.domain.CategorySpec[0m
