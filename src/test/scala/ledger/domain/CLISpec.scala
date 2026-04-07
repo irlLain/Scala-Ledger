@@ -5,6 +5,8 @@ import org.scalatest.matchers.should.Matchers
 import ledger.domain._
 import ledger.ledger._
 import ledger.cli.Cli
+import ledger.parsing.{CsvParser, ParseError}
+import java.time.LocalDate
 
 class CLISpec extends AnyWordSpec with Matchers {
 
@@ -84,34 +86,23 @@ class CLISpec extends AnyWordSpec with Matchers {
     //path handling
     "Return error when CSV file is not found" in {
         val args = List("nonexistent.csv")
-
         val result = Cli.run(args)
-
-        result shouldBe Right("nonexistent.csv")
+        result shouldBe Left("File not found: nonexistent.csv")
     }
-
     "Return error when CSV file cannot be read" in {
-        val args = List("/root/transactions.csv")
-
+        val args = List("unreadable.csv")
         val result = Cli.run(args)
-
-        result shouldBe Right("/root/transactions.csv")
+        result.isLeft shouldBe true
     }
-
     "Return error when CSV file is empty" in {
         val args = List("empty.csv")
-
         val result = Cli.run(args)
-
-        result shouldBe Right("empty.csv")
+        result shouldBe Left("CSV file is empty")
     }
-
     "Return error when CSV file contains only headers" in {
-        val args = List("headers_only.csv")
-
+        val args = List("headers-only.csv")
         val result = Cli.run(args)
-
-        result shouldBe Right("headers_only.csv")
+        result shouldBe Left("CSV file contains no data rows")
     }
 
     "Proceed when CSV file contains valid data rows" in {
@@ -124,51 +115,43 @@ class CLISpec extends AnyWordSpec with Matchers {
 
     //csv content validation
     "Reject CSV with invalid row format" in {
-        val args = List("sample-data/march-2026.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("sample-data/march-2026.csv")
+        val result = CsvParser.parse("2024-01-01,Groceries")
+        result shouldBe Left(ParseError.InvalidFormat)
     }
-
     "Reject CSV with invalid date values" in {
-        val args = List("invalid_dates.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("invalid_dates.csv")
+        val result = CsvParser.parse("not-a-date,Groceries,-150.00")
+        result shouldBe Left(ParseError.InvalidDate)
     }
-
     "Reject CSV with invalid numeric values" in {
-        val args = List("invalid_amounts.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("invalid_amounts.csv")
+        val result = CsvParser.parse("2024-01-01,Groceries,not-a-number")
+        result shouldBe Left(ParseError.InvalidAmount)
     }
-
     "Allow CSV with mixed valid and invalid rows" in {
-        val args = List("mixed_valid_invalid.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("mixed_valid_invalid.csv")
+        val rows = List(
+            "2024-01-01,Groceries,-150.00",
+            "invalid-row",
+            "2024-01-15,Salary,3000.00"
+        )
+        val results = rows.map(CsvParser.parse)
+        results.exists(_.isRight) shouldBe true
+        results.exists(_.isLeft) shouldBe true
     }
-
     "Return error when all CSV rows are invalid" in {
-        val args = List("all_invalid.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("all_invalid.csv")
+        val rows = List("bad-row-1", "bad-row-2", "bad-row-3")
+        val results = rows.map(CsvParser.parse)
+        results.forall(_.isLeft) shouldBe true
     }
-
-    "Return partial success when some rows are invalid" in {    
-        val args = List("partial_invalid.csv")
-
-        val result = Cli.run(args)
-
-        result shouldBe Right("partial_invalid.csv")
+    "Return partial success when some rows are invalid" in {
+        val rows = List(
+            "2024-01-01,Salary,3000.00",
+            "bad-row",
+            "2024-01-15,Groceries,-150.00"
+        )
+        val results = rows.map(CsvParser.parse)
+        val valid = results.collect { case Right(t) => t }
+        val invalid = results.collect { case Left(e) => e }
+        valid should have length 2
+        invalid should have length 1
     }
 
     //Income and expense classification
@@ -269,6 +252,16 @@ class CLISpec extends AnyWordSpec with Matchers {
             Transaction(LocalDate.of(2024, 1, 1), Category("Salary"), Money(BigDecimal(3000))),
             Transaction(LocalDate.of(2024, 1, 15), Category("Salary"), Money(BigDecimal(-500)))
         )
+
+        val categories = transactions.groupBy(_.category.value).map {
+            case (desc, txns) =>
+            val totalAmount = txns.map(_.amount.value).fold(BigDecimal(0))(_ + _)
+            Category(desc, totalAmount)
+        }.toList
+
+        categories should contain theSameElementsAs List(
+            Category("Salary", BigDecimal(2500))
+        )
     }
 
     "Exclude categories with no transactions" in {
@@ -343,6 +336,12 @@ class CLISpec extends AnyWordSpec with Matchers {
         }.toList
 
         val sortedCategories = categories.sortBy(_.value)
+
+        sortedCategories shouldEqual List(
+            Category("Groceries", BigDecimal(-150)),
+            Category("Rent", BigDecimal(-1000)),
+            Category("Utilities", BigDecimal(-200))
+        )
     }
 
     "Sort categories case-insensitively" in {
@@ -478,25 +477,18 @@ class CLISpec extends AnyWordSpec with Matchers {
 
     "Return FileNotFound error when CSV file is missing" in {
         val args = List("missing.csv")
-
         val result = Cli.run(args)
-
-        result shouldBe Right("missing.csv")
+        result shouldBe Left("File not found: missing.csv")
     }
     "Return ParseError when CSV cannot be parsed" in {
-        val args = List("unparseable.csv")
-
+        val args = List("invalid.csv")
         val result = Cli.run(args)
-
-        result shouldBe Right("unparseable.csv")
+        result.isLeft shouldBe true
     }
-
     "Return NoValidData error when no valid rows exist" in {
-        val args = List("all_invalid.csv")
-
+        val args = List("no-valid-data.csv")
         val result = Cli.run(args)
-
-        result shouldBe Right("all_invalid.csv")
+        result shouldBe Left("No valid data rows found")
     }
 
     "Return meaningful error messages" in {

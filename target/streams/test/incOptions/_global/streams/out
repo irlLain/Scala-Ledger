@@ -7,6 +7,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LedgerSpec.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CLISpec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CLISpec$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CLISpec$$anonfun$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CategorySpec.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CsvParserSpec.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MonthSpec.class[0m
