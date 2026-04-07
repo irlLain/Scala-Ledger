@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\domain\month.scala:11:31: value value is not a member of BigDecimal[0m
-[0m[[0m[31merror[0m] [0m[0m    transactions.map(_.amount.value).fold(BigDecimal(0))(_ + _)  [0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

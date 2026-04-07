@@ -1,1 +1,1 @@
-["ledger.domain.LedgerSpec","ledger.domain.MonthSpec","ledger.parsing.CsvParserSpec","ledger.domain.CategorySpec"]
+["ledger.domain.LedgerSpec","ledger.domain.CategorySpec","ledger.domain.MonthSpec","ledger.domain.CLISpec","ledger.parsing.CsvParserSpec"]
