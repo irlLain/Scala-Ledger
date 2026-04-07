@@ -1,19 +1,8 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@44583c4e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@44583c4e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CLISpec, org.scalatest.tools.Framework$$anon$1@44583c4e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@44583c4e, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@44583c4e, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct total for a single transaction in a single month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should sum multiple transactions within the same month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions into separate months[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should net income and expenses correctly within a month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a negative total when a month contains only expenses[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce the same results regardless of transaction order[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return no monthly totals for an empty ledger[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CategorySpec, org.scalatest.tools.Framework$$anon$1@5afc51e2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.MonthSpec, org.scalatest.tools.Framework$$anon$1@5afc51e2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.parsing.CsvParserSpec, org.scalatest.tools.Framework$$anon$1@5afc51e2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.LedgerSpec, org.scalatest.tools.Framework$$anon$1@5afc51e2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ledger.domain.CLISpec, org.scalatest.tools.Framework$$anon$1@5afc51e2, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParserSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCsvParser[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -30,17 +19,17 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Too many columns returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid date format returns an error[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Invalid amount format returns an error[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mLedgerSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mLedger[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMonthSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMonth[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list of months when created with no transactions[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions by year and month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a single Month when all transactions occur in the same month[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return multiple Months when transactions span multiple months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct total for a single transaction in a single month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should sum multiple transactions within the same month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions into separate months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should net income and expenses correctly within a month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a negative total when a month contains only expenses[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should preserve all transactions when grouping into months[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return months ordered by year and month ascending[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should produce deterministic results regardless of transaction order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce the same results regardless of transaction order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return no monthly totals for an empty ledger[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCategorySpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCategory[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
@@ -55,26 +44,39 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Create separate category groups for income and expenses with the same name[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Income categories should be ordered alphabetically[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Expense categories should be ordered alphabetically[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLedgerSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLedger[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list of months when created with no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should group transactions by year and month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a single Month when all transactions occur in the same month[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return multiple Months when transactions span multiple months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should exclude months that have no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should preserve all transactions when grouping into months[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return months ordered by year and month ascending[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should produce deterministic results regardless of transaction order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCLISpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mCLI[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should exist and allow tests to run[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should Accept a single CSV file path argument[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should Accept relative CSV file paths[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should Accept absolute CSV file paths[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Accept a single CSV file path argument *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: transactions.csv") was not equal to Right("transactions.csv") (CLISpec.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Accept relative CSV file paths *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: ./data/transactions.csv") was not equal to Right("./data/transactions.csv") (CLISpec.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Accept absolute CSV file paths *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv") was not equal to Right("C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv") (CLISpec.scala:42)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when no arguments are provided[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when more than one argument is provided[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when file extension is not .csv[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when argument is an empty string[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when argument is whitespace[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should Return error when CSV file is not found *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Right("nonexistent.csv") was not equal to Left("File not found: nonexistent.csv") (CLISpec.scala:90)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should Return error when CSV file cannot be read *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  false was not equal to true (CLISpec.scala:95)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when CSV file is not found[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return error when CSV file cannot be read[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should Return error when CSV file is empty *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Right("empty.csv") was not equal to Left("CSV file is empty") (CLISpec.scala:100)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: empty.csv") was not equal to Left("CSV file is empty") (CLISpec.scala:100)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should Return error when CSV file contains only headers *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Right("headers-only.csv") was not equal to Left("CSV file contains no data rows") (CLISpec.scala:105)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should Proceed when CSV file contains valid data rows[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: headers-only.csv") was not equal to Left("CSV file contains no data rows") (CLISpec.scala:105)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should Proceed when CSV file contains valid data rows *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: valid_transactions.csv") was not equal to Right("valid_transactions.csv") (CLISpec.scala:113)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Reject CSV with invalid row format[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Reject CSV with invalid date values[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Reject CSV with invalid numeric values[0m[0m
@@ -102,14 +104,12 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Calculate totals per category[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Ensure totals equal the sum of grouped transactions[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return InvalidArguments error for malformed input[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should Return FileNotFound error when CSV file is missing *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Right("missing.csv") was not equal to Left("File not found: missing.csv") (CLISpec.scala:481)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should Return ParseError when CSV cannot be parsed *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  false was not equal to true (CLISpec.scala:486)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return FileNotFound error when CSV file is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return ParseError when CSV cannot be parsed[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should Return NoValidData error when no valid rows exist *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Right("no-valid-data.csv") was not equal to Left("No valid data rows found") (CLISpec.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Left("File not found: no-valid-data.csv") was not equal to Left("No valid data rows found") (CLISpec.scala:491)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Return meaningful error messages[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 611 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 538 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 89[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 82, failed 7, canceled 0, ignored 0, pending 0[0m[0m

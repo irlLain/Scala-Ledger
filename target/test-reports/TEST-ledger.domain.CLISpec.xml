@@ -1,161 +1,225 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="c11-ktfbtbneveb" name="ledger.domain.CLISpec" tests="45" errors="0" failures="7" skipped="0" time="0.095" timestamp="2026-04-07T15:48:22">
+<testsuite hostname="c11-ktfbtbneveb" name="ledger.domain.CLISpec" tests="45" errors="0" failures="7" skipped="0" time="0.114" timestamp="2026-04-07T17:10:51">
           <properties>
       <property name="java.specification.version" value="25"/><property name="sun.cpu.isalist" value="amd64"/><property name="sun.jnu.encoding" value="Cp1252"/><property name="java.class.path" value="C:\Users\morgan.graves\AppData\Local\Coursier\cache\arc\https\github.com\sbt\sbt\releases\download\v1.12.7\sbt-1.12.7.zip\sbt\bin\sbt-launch.jar"/><property name="java.vm.vendor" value="Eclipse Adoptium"/><property name="sun.arch.data.model" value="64"/><property name="user.variant" value=""/><property name="jline.shutdownhook" value="false"/><property name="java.vendor.url" value="https://adoptium.net/"/><property name="user.timezone" value="Europe/London"/><property name="java.vm.specification.version" value="25"/><property name="os.name" value="Windows 11"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="GB"/><property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin"/><property name="sun.java.command" value="xsbt.boot.Boot test"/><property name="jdk.debug" value="release"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="C:\Users\morgan.graves"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="sbt.ipcsocket.tmpdir" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\.sbt542287ca\ipcsocket"/><property name="swoval.tmpdir" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\.sbt542287ca\swoval"/><property name="java.version.date" value="2026-01-20"/><property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot"/><property name="file.separator" value="\"/><property name="java.vm.compressedOopsMode" value="32-bit"/><property name="line.separator" value="
-"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="user.script" value=""/><property name="jline.esc.timeout" value="0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="25.0.2+10-LTS"/><property name="user.name" value="morgan.graves"/><property name="stdout.encoding" value="cp850"/><property name="path.separator" value=";"/><property name="os.version" value="10.0"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\jna--2089151880\jna14350432770225334317.dll"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.version" value="Temurin-25.0.2+10"/><property name="jna.loaded" value="true"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="java.io.tmpdir" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\"/><property name="java.version" value="25.0.2"/><property name="user.dir" value="C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger"/><property name="os.arch" value="amd64"/><property name="sun.misc.unsafe.memory.access" value="allow"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="sun.os.patch.level" value=""/><property name="native.encoding" value="Cp1252"/><property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;c:\Users\morgan.graves\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\morgan.graves\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\morgan.graves\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\morgan.graves\AppData\Local\Microsoft\WindowsApps;C:\Users\morgan.graves\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\morgan.graves\AppData\Local\Coursier\data\bin;C:\Users\morgan.graves\AppData\Local\Programs\Git\cmd;C:\Users\morgan.graves\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin11-binaries\releases\download\jdk-11.0.30%252B7\OpenJDK11U-jdk_x64_windows_hotspot_11.0.30_7.zip\jdk-11.0.30+7\bin;C:\Users\morgan.graves\AppData\Local\Python\binc:\Users\morgan.graves\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/><property name="java.vm.info" value="mixed mode, sharing"/><property name="stderr.encoding" value="cp850"/><property name="java.vendor" value="Eclipse Adoptium"/><property name="java.vm.version" value="25.0.2+10-LTS"/><property name="stdin.encoding" value="cp850"/><property name="scala.ext.dirs" value="C:\Users\morgan.graves\.sbt\1.0\java9-rt-ext-eclipse_adoptium_25_0_2"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="java.class.version" value="69.0"/>
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="user.script" value=""/><property name="jline.esc.timeout" value="0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="25.0.2+10-LTS"/><property name="user.name" value="morgan.graves"/><property name="stdout.encoding" value="cp850"/><property name="path.separator" value=";"/><property name="os.version" value="10.0"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\jna--2089151880\jna6045917188729705594.dll"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.version" value="Temurin-25.0.2+10"/><property name="jna.loaded" value="true"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="java.io.tmpdir" value="C:\Users\MORGAN~1.GRA\AppData\Local\Temp\"/><property name="java.version" value="25.0.2"/><property name="user.dir" value="C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger"/><property name="os.arch" value="amd64"/><property name="sun.misc.unsafe.memory.access" value="allow"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="sun.os.patch.level" value=""/><property name="native.encoding" value="Cp1252"/><property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;c:\Users\morgan.graves\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\morgan.graves\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\morgan.graves\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Users\morgan.graves\AppData\Local\Microsoft\WindowsApps;C:\Users\morgan.graves\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\morgan.graves\AppData\Local\Coursier\data\bin;C:\Users\morgan.graves\AppData\Local\Programs\Git\cmd;C:\Users\morgan.graves\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin11-binaries\releases\download\jdk-11.0.30%252B7\OpenJDK11U-jdk_x64_windows_hotspot_11.0.30_7.zip\jdk-11.0.30+7\bin;C:\Users\morgan.graves\AppData\Local\Python\binc:\Users\morgan.graves\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/><property name="java.vm.info" value="mixed mode, sharing"/><property name="stderr.encoding" value="cp850"/><property name="java.vendor" value="Eclipse Adoptium"/><property name="java.vm.version" value="25.0.2+10-LTS"/><property name="stdin.encoding" value="cp850"/><property name="scala.ext.dirs" value="C:\Users\morgan.graves\.sbt\1.0\java9-rt-ext-eclipse_adoptium_25_0_2"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="java.class.version" value="69.0"/>
     </properties>
-          <testcase classname="ledger.domain.CLISpec" name="CLI should exist and allow tests to run" time="0.021">
+          <testcase classname="ledger.domain.CLISpec" name="CLI should exist and allow tests to run" time="0.022">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Accept a single CSV file path argument" time="0.001">
-                      
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Accept relative CSV file paths" time="0.001">
-                      
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Accept a single CSV file path argument" time="0.019">
+                      <failure message="Left(&quot;File not found: transactions.csv&quot;) was not equal to Right(&quot;transactions.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: transactions.csv&quot;) was not equal to Right(&quot;transactions.csv&quot;)
+	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
+	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
+	at ledger.domain.CLISpec.$anonfun$new$3(CLISpec.scala:26)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
+	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
+	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
+	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
+	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
+	at sbt.TestRunner.run(TestFramework.scala:168)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFunction.apply(TestFramework.scala:348)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
+	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+	at sbt.Execute.work(Execute.scala:292)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</failure>
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Accept relative CSV file paths" time="0.002">
+                      <failure message="Left(&quot;File not found: ./data/transactions.csv&quot;) was not equal to Right(&quot;./data/transactions.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: ./data/transactions.csv&quot;) was not equal to Right(&quot;./data/transactions.csv&quot;)
+	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
+	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
+	at ledger.domain.CLISpec.$anonfun$new$4(CLISpec.scala:34)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
+	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
+	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
+	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
+	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
+	at sbt.TestRunner.run(TestFramework.scala:168)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFunction.apply(TestFramework.scala:348)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
+	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+	at sbt.Execute.work(Execute.scala:292)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</failure>
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Accept absolute CSV file paths" time="0.0">
-                      
+                      <failure message="Left(&quot;File not found: C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv&quot;) was not equal to Right(&quot;C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv&quot;) was not equal to Right(&quot;C:/Users/morgan.graves/Documents/Scala Project 1 - Ledger/data/transactions.csv&quot;)
+	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
+	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
+	at ledger.domain.CLISpec.$anonfun$new$5(CLISpec.scala:42)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
+	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
+	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
+	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
+	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
+	at sbt.TestRunner.run(TestFramework.scala:168)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFunction.apply(TestFramework.scala:348)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
+	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+	at sbt.Execute.work(Execute.scala:292)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</failure>
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when no arguments are provided" time="0.0">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when more than one argument is provided" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when file extension is not .csv" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when file extension is not .csv" time="0.0">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when argument is an empty string" time="0.0">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when argument is whitespace" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when argument is whitespace" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file is not found" time="0.015">
-                      <failure message="Right(&quot;nonexistent.csv&quot;) was not equal to Left(&quot;File not found: nonexistent.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Right(&quot;nonexistent.csv&quot;) was not equal to Left(&quot;File not found: nonexistent.csv&quot;)
-	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
-	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
-	at ledger.domain.CLISpec.$anonfun$new$11(CLISpec.scala:90)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
-	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
-	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
-	at org.scalatest.Suite.run(Suite.scala:1114)
-	at org.scalatest.Suite.run$(Suite.scala:1096)
-	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
-	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
-	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
-	at sbt.TestRunner.run(TestFramework.scala:168)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFunction.apply(TestFramework.scala:348)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
-	at sbt.Execute.work(Execute.scala:292)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-</failure>
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file cannot be read" time="0.011">
-                      <failure message="false was not equal to true" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: false was not equal to true
-	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
-	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
-	at ledger.domain.CLISpec.$anonfun$new$12(CLISpec.scala:95)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
-	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
-	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
-	at org.scalatest.Suite.run(Suite.scala:1114)
-	at org.scalatest.Suite.run$(Suite.scala:1096)
-	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
-	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
-	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
-	at sbt.TestRunner.run(TestFramework.scala:168)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFunction.apply(TestFramework.scala:348)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
-	at sbt.Execute.work(Execute.scala:292)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-</failure>
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file is not found" time="0.002">
+                      
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file cannot be read" time="0.0">
+                      
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file is empty" time="0.001">
-                      <failure message="Right(&quot;empty.csv&quot;) was not equal to Left(&quot;CSV file is empty&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Right(&quot;empty.csv&quot;) was not equal to Left(&quot;CSV file is empty&quot;)
+                      <failure message="Left(&quot;File not found: empty.csv&quot;) was not equal to Left(&quot;CSV file is empty&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: empty.csv&quot;) was not equal to Left(&quot;CSV file is empty&quot;)
 	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
 	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
 	at ledger.domain.CLISpec.$anonfun$new$13(CLISpec.scala:100)
@@ -220,8 +284,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 </failure>
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file contains only headers" time="0.001">
-                      <failure message="Right(&quot;headers-only.csv&quot;) was not equal to Left(&quot;CSV file contains no data rows&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Right(&quot;headers-only.csv&quot;) was not equal to Left(&quot;CSV file contains no data rows&quot;)
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when CSV file contains only headers" time="0.0">
+                      <failure message="Left(&quot;File not found: headers-only.csv&quot;) was not equal to Left(&quot;CSV file contains no data rows&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: headers-only.csv&quot;) was not equal to Left(&quot;CSV file contains no data rows&quot;)
 	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
 	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
 	at ledger.domain.CLISpec.$anonfun$new$14(CLISpec.scala:105)
@@ -287,195 +351,131 @@
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 </failure>
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Proceed when CSV file contains valid data rows" time="0.0">
+                      <failure message="Left(&quot;File not found: valid_transactions.csv&quot;) was not equal to Right(&quot;valid_transactions.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: valid_transactions.csv&quot;) was not equal to Right(&quot;valid_transactions.csv&quot;)
+	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
+	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
+	at ledger.domain.CLISpec.$anonfun$new$15(CLISpec.scala:113)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
+	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
+	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
+	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
+	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
+	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
+	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
+	at sbt.TestRunner.run(TestFramework.scala:168)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
+	at sbt.TestFunction.apply(TestFramework.scala:348)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
+	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
+	at sbt.Execute.work(Execute.scala:292)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</failure>
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid row format" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid row format" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid date values" time="0.003">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid date values" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid numeric values" time="0.003">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Reject CSV with invalid numeric values" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Allow CSV with mixed valid and invalid rows" time="0.002">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Allow CSV with mixed valid and invalid rows" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when all CSV rows are invalid" time="0.006">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return error when all CSV rows are invalid" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return partial success when some rows are invalid" time="0.008">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return partial success when some rows are invalid" time="0.013">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify positive amounts as income" time="0.0">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify positive amounts as income" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify zero amounts as income" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify zero amounts as income" time="0.0">
-                      
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify negative amounts as expense" time="0.0">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Classify negative amounts as expense" time="0.021">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Ensure income flag is false for negative amounts" time="0.0">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Do not mix income and expense transactions" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Do not mix income and expense transactions" time="0.0">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Preserve original transaction amounts" time="0.0">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Group income transactions by category" time="0.003">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Group income transactions by category" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Group expense transactions by category" time="0.002">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Group expense transactions by category" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Create separate category groups for income and expense with the same name" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Create separate category groups for income and expense with the same name" time="0.002">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Exclude categories with no transactions" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Preserve all transactions during grouping" time="0.002">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Preserve all transactions during grouping" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Order income categories alphabetically" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Order income categories alphabetically" time="0.002">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Order expense categories alphabetically" time="0.002">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Sort categories case-insensitively" time="0.002">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Produce deterministic ordering regardless of input order" time="0.002">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Produce deterministic ordering regardless of input order" time="0.001">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate total income correctly" time="0.002">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate total expenses correctly" time="0.002">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate total expenses correctly" time="0.001">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate net total correctly" time="0.001">
                       
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate totals per category" time="0.002">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Calculate totals per category" time="0.001">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Ensure totals equal the sum of grouped transactions" time="0.002">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return InvalidArguments error for malformed input" time="0.0">
                       
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return FileNotFound error when CSV file is missing" time="0.0">
-                      <failure message="Right(&quot;missing.csv&quot;) was not equal to Left(&quot;File not found: missing.csv&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Right(&quot;missing.csv&quot;) was not equal to Left(&quot;File not found: missing.csv&quot;)
-	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
-	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
-	at ledger.domain.CLISpec.$anonfun$new$109(CLISpec.scala:481)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
-	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
-	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
-	at org.scalatest.Suite.run(Suite.scala:1114)
-	at org.scalatest.Suite.run$(Suite.scala:1096)
-	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
-	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
-	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
-	at sbt.TestRunner.run(TestFramework.scala:168)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFunction.apply(TestFramework.scala:348)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
-	at sbt.Execute.work(Execute.scala:292)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-</failure>
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return ParseError when CSV cannot be parsed" time="0.0">
-                      <failure message="false was not equal to true" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: false was not equal to true
-	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
-	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
-	at ledger.domain.CLISpec.$anonfun$new$110(CLISpec.scala:486)
-	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
-	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
-	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-	at org.scalatest.Transformer.apply(Transformer.scala:22)
-	at org.scalatest.Transformer.apply(Transformer.scala:20)
-	at org.scalatest.wordspec.AnyWordSpecLike$$anon$3.apply(AnyWordSpecLike.scala:1240)
-	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
-	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
-	at org.scalatest.wordspec.AnyWordSpec.withFixture(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.invokeWithFixture$1(AnyWordSpecLike.scala:1238)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTest$1(AnyWordSpecLike.scala:1250)
-	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest(AnyWordSpecLike.scala:1250)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTest$(AnyWordSpecLike.scala:1232)
-	at org.scalatest.wordspec.AnyWordSpec.runTest(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$runTests$1(AnyWordSpecLike.scala:1309)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
-	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
-	at scala.collection.immutable.List.foreach(List.scala:334)
-	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
-	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
-	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests(AnyWordSpecLike.scala:1309)
-	at org.scalatest.wordspec.AnyWordSpecLike.runTests$(AnyWordSpecLike.scala:1308)
-	at org.scalatest.wordspec.AnyWordSpec.runTests(AnyWordSpec.scala:1880)
-	at org.scalatest.Suite.run(Suite.scala:1114)
-	at org.scalatest.Suite.run$(Suite.scala:1096)
-	at org.scalatest.wordspec.AnyWordSpec.org$scalatest$wordspec$AnyWordSpecLike$$super$run(AnyWordSpec.scala:1880)
-	at org.scalatest.wordspec.AnyWordSpecLike.$anonfun$run$1(AnyWordSpecLike.scala:1354)
-	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
-	at org.scalatest.wordspec.AnyWordSpecLike.run(AnyWordSpecLike.scala:1354)
-	at org.scalatest.wordspec.AnyWordSpecLike.run$(AnyWordSpecLike.scala:1352)
-	at org.scalatest.wordspec.AnyWordSpec.run(AnyWordSpec.scala:1880)
-	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
-	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
-	at sbt.TestRunner.runTest$1(TestFramework.scala:153)
-	at sbt.TestRunner.run(TestFramework.scala:168)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)
-	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)
-	at sbt.TestFunction.apply(TestFramework.scala:348)
-	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)
-	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)
-	at sbt.std.Transform$$anon$4.work(Transform.scala:69)
-	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)
-	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)
-	at sbt.Execute.work(Execute.scala:292)
-	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)
-	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-</failure>
+                      
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return ParseError when CSV cannot be parsed" time="0.001">
+                      
                     </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return NoValidData error when no valid rows exist" time="0.0">
-                      <failure message="Right(&quot;no-valid-data.csv&quot;) was not equal to Left(&quot;No valid data rows found&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Right(&quot;no-valid-data.csv&quot;) was not equal to Left(&quot;No valid data rows found&quot;)
+                      <failure message="Left(&quot;File not found: no-valid-data.csv&quot;) was not equal to Left(&quot;No valid data rows found&quot;)" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Left(&quot;File not found: no-valid-data.csv&quot;) was not equal to Left(&quot;No valid data rows found&quot;)
 	at org.scalatest.matchers.MatchersHelper$.indicateFailure(MatchersHelper.scala:392)
 	at org.scalatest.matchers.should.Matchers$AnyShouldWrapper.shouldBe(Matchers.scala:7539)
 	at ledger.domain.CLISpec.$anonfun$new$111(CLISpec.scala:491)
@@ -540,7 +540,7 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 </failure>
-                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return meaningful error messages" time="0.001">
+                    </testcase><testcase classname="ledger.domain.CLISpec" name="CLI should Return meaningful error messages" time="0.0">
                       
                     </testcase>
           <system-out><![CDATA[]]></system-out>
