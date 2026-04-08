@@ -1,6 +1,7 @@
 #Successful Tests
-#Tue Apr 07 17:10:52 BST 2026
-ledger.domain.CategorySpec=1775578252220
-ledger.domain.LedgerSpec=1775578252203
-ledger.domain.MonthSpec=1775578252203
-ledger.parsing.CsvParserSpec=1775578252203
+#Wed Apr 08 11:31:07 BST 2026
+ledger.domain.CLISpec=1775644267945
+ledger.domain.CategorySpec=1775644267872
+ledger.domain.LedgerSpec=1775644267865
+ledger.domain.MonthSpec=1775644267865
+ledger.parsing.CsvParserSpec=1775644267865

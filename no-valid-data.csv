@@ -1,0 +1,4 @@
+date,category,amount
+bad-row
+2026-99-99,Groceries,-100.00
+2026-03-10,Rent,not-a-number

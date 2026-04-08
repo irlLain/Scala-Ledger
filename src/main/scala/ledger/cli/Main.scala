@@ -2,14 +2,43 @@ package ledger.cli
 
 import java.nio.file.Files
 import java.nio.file.Paths
+import ledger.parsing.CsvParser
+import scala.jdk.CollectionConverters._
 import scala.io.StdIn
 
 object Cli {
   def run(args: List[String]): Either[String, String] =
     args match {
       case path :: Nil if path.endsWith(".csv") =>
-        if (Files.exists(Paths.get(path))) Right(path)
-        else Left(s"File not found: $path")
+        val filePath = Paths.get(path)
+        if (!Files.exists(filePath)) {
+          Left(s"File not found: $path")
+        } else if (!Files.isReadable(filePath)) {
+          Left(s"Cannot read file: $path")
+        } else {
+          try {
+            val nonEmptyLines = Files.readAllLines(filePath).asScala.toList.map(_.trim).filter(_.nonEmpty)
+
+            if (nonEmptyLines.isEmpty) {
+              Left("CSV file is empty")
+            } else {
+              val hasHeader = nonEmptyLines.head.toLowerCase.startsWith("date,")
+              val dataRows = if (hasHeader) nonEmptyLines.tail else nonEmptyLines
+
+              if (dataRows.isEmpty) {
+                Left("CSV file contains no data rows")
+              } else {
+                val parsedRows = dataRows.map(CsvParser.parse)
+                val hasValidRows = parsedRows.exists(_.isRight)
+
+                if (!hasValidRows) Left("No valid data rows found")
+                else Right(path)
+              }
+            }
+          } catch {
+            case _: Exception => Left(s"Cannot read file: $path")
+          }
+        }
       case Nil =>
         Left("No CSV file path provided")
       case _ =>
