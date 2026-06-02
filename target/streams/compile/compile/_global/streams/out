@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\src\main\scala\ledger\cli\Main.scala:42:12: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String("--help")[0m
+[0m[[0m[31merror[0m] [0m[0m required: List[String][0m
+[0m[[0m[31merror[0m] [0m[0m      case "--help" =>[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

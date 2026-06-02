@@ -39,6 +39,14 @@ object Cli {
             case _: Exception => Left(s"Cannot read file: $path")
           }
         }
+      case "--help" :: _ =>
+        Left(
+          """
+          Help!
+          Process the specified CSV file: ledger <path-to-csv> 
+          Show this help message: --help
+          """.stripMargin
+        )
       case Nil =>
         Left("No CSV file path provided")
       case _ =>
@@ -47,39 +55,54 @@ object Cli {
 }
 
 object Main extends App {
-  println(
-  """Welcome to Ledger: the personal finance tool.
-    |
-    |To get started, provide the path to your CSV file:
-    |  ledger <path-to-csv>
-    |
-    |Need help?
-    |  ledger --help
-    |
-    |Example:
-    |  ledger transactions.csv
-    |""".stripMargin
-)
-  println("Enter command or CSV path (e.g., ledger transactions.csv):")
-  val typedInput = StdIn.readLine().trim
+  def printMenu(): Unit = {
+    println(
+      """
+      Welcome to Ledger: the personal finance tool.
+      To get started, provide the path to your CSV file using the command:
+        ledger <path-to-csv>
 
-  val effectiveArgs =
-    if (args.nonEmpty) {
-      args.toList
-    } else if (typedInput.isEmpty) {
-      Nil
-    } else {
-      val tokens = typedInput.split("\\s+").toList
-      tokens match {
-        case "ledger" :: rest => rest
-        case other => other
+      Need help? Type: ledger --help
+      
+      Type 'exit' to quit.""".stripMargin
+    )
+  }
+
+  def mainLoop(): Unit = {
+    printMenu()
+    var continue = true
+    
+    while (continue) {
+      println("Enter command or CSV path (e.g., ledger transactions.csv):")
+      val typedInput = StdIn.readLine().trim
+
+      if (typedInput.toLowerCase == "exit") {
+        println("Goodbye!")
+        continue = false
+      } else {
+        val effectiveArgs =
+          if (args.nonEmpty) {
+            args.toList
+          } else if (typedInput.isEmpty) {
+            Nil
+          } else {
+            val tokens = typedInput.split("\\s+").toList
+            tokens match {
+              case "ledger" :: rest => rest
+              case other => other
+            }
+          }
+
+        Cli.run(effectiveArgs) match {
+          case Right(path) =>
+            println(s"Processing file: $path")
+          case Left(error) =>
+            println(error)
+        }
+        println() // Add blank line before returning to menu
       }
     }
-
-  Cli.run(effectiveArgs) match {
-    case Right(path) =>
-      println(s"Processing file: $path")
-    case Left(error) =>
-      println(error)
   }
+
+  mainLoop()
 }

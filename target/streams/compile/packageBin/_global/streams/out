@@ -1,0 +1,59 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\scala-project-1-ledger_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli\Cli$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli\Cli$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli\Cli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli\Cli.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli\Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli\Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\cli\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\cli\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Category$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Category$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Category.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Category.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Money$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Money$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Money.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Money.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Month$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Month$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Month.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Month.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Transaction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Transaction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\domain\Transaction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\domain\Transaction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\ledger[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\ledger[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\ledger\Ledger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\ledger\Ledger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\ledger\Ledger.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\ledger\Ledger.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\CsvParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\CsvParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\CsvParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\CsvParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError$InvalidAmount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError$InvalidAmount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError$InvalidDate$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError$InvalidDate$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError$InvalidFormat$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError$InvalidFormat$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError$UnexplainedError$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError$UnexplainedError$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ledger\parsing\ParseError.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\morgan.graves\Documents\Scala Project 1 - Ledger\target\scala-2.13\classes\ledger\parsing\ParseError.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
